@@ -1,23 +1,6 @@
 {
   "furniture": [
     {
-      "id": "1",
-      "title": "kede",
-      "type": "medine",
-      "price": 100,
-      "location": {
-        "country": "Lenkija",
-        "city": "Varsuva",
-        "street": "Kazkokiagatve"
-      },
-      "owner": {
-        "fullname": "Jonas",
-        "mobile": "12345",
-        "address": "gera gatve",
-        "email": "jonas@gmail.com"
-      }
-    },
-    {
       "id": "2",
       "title": "stalas",
       "type": "medinis",

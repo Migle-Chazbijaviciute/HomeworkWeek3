@@ -7,7 +7,9 @@ const getFurniture = (resolve, reject) => {
     .catch(reject);
 }
 
-console.log();
+// fetch(url + '/furniture')
+//   .then(response => response.json())
+//   .then(data => console.log(data));
 
 const deleteFurniture = (resolve, reject, id) => {
   fetch(url + '/furniture/' + id, { method: 'DELETE' })
@@ -15,9 +17,15 @@ const deleteFurniture = (resolve, reject, id) => {
     .catch(reject);
 }
 
+// testId = 1;
+// let deleted = fetch(url + '/furniture/' + testId, { method: 'DELETE' });
+
+// fetch(url + '/furniture')
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+
 const API = {
   getFurniture,
   deleteFurniture
 };
-
 
