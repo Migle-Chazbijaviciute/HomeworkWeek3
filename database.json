@@ -2,16 +2,16 @@
   "furniture": [
     {
       "id": "1",
-      "title": "kede",
-      "type": "medine",
+      "title": "kėdė",
+      "type": "Medinė",
       "price": 100,
       "location": {
         "country": "Lenkija",
-        "city": "Varsuva",
+        "city": "Varšuva",
         "street": "Kazkokiagatve"
       },
       "owner": {
-        "fullname": "Jonas",
+        "fullname": "Jonas Jonaitis",
         "mobile": "12345",
         "address": "gera gatve",
         "email": "jonas@gmail.com"
@@ -20,15 +20,15 @@
     {
       "id": "2",
       "title": "stalas",
-      "type": "medinis",
+      "type": "Marmurinis",
       "price": 200,
       "location": {
         "country": "Lenkija",
-        "city": "Varsuva",
+        "city": "Varšuva",
         "street": "Kazkokiagatve"
       },
       "owner": {
-        "fullname": "Antanas",
+        "fullname": "Antanas Antanaitis",
         "mobile": "54321",
         "address": "butu gatve",
         "email": "antanas@gmail.com"
@@ -37,7 +37,7 @@
     {
       "id": "3",
       "title": "lova",
-      "type": "minksta",
+      "type": "King-size",
       "price": 550,
       "location": {
         "country": "Vokietija",
@@ -45,7 +45,7 @@
         "street": "Grazigatve"
       },
       "owner": {
-        "fullname": "Dalia",
+        "fullname": "Dalia Dalė",
         "mobile": "6789",
         "address": "kotedzu gatve",
         "email": "dalia@gmail.com"

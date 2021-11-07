@@ -25,7 +25,6 @@ class FurnitureGridComponent {
   initialize = () => {
     this.fetchFurniture();
     this.htmlElement = document.createElement('div');
-    this.htmlElement.className = 'container solid border 2px';
     this.render();
   }
 
@@ -36,6 +35,12 @@ class FurnitureGridComponent {
       this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif"></div>';
     } else {
       this.htmlElement.innerHTML = '';
+      this.state.furniture.forEach(furniture => {
+        const newCard = new FurnitureCardComponent({
+          data: furniture
+        })
+        this.htmlElement.appendChild(newCard.htmlElement);
+      })
     }
   }
 }
