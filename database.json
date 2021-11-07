@@ -50,6 +50,40 @@
         "address": "kotedzu gatve",
         "email": "dalia@gmail.com"
       }
+    },
+    {
+      "id": "4",
+      "title": "lovvavaa",
+      "type": "King-size",
+      "price": 550,
+      "location": {
+        "country": "Vokietija",
+        "city": "Frankfurtas",
+        "street": "Grazigatve"
+      },
+      "owner": {
+        "fullname": "Dalia Dalė",
+        "mobile": "6789",
+        "address": "kotedzu gatve",
+        "email": "dalia@gmail.com"
+      }
+    },
+    {
+      "id": "5",
+      "title": "avolavol",
+      "type": "King-size",
+      "price": 550,
+      "location": {
+        "country": "Vokietija",
+        "city": "Frankfurtas",
+        "street": "Grazigatve"
+      },
+      "owner": {
+        "fullname": "Dalia Dalė",
+        "mobile": "6789",
+        "address": "kotedzu gatve",
+        "email": "dalia@gmail.com"
+      }
     }
   ]
 }
