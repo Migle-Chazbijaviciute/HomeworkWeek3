@@ -22,6 +22,23 @@ class FurnitureGridComponent {
     );
   }
 
+  deleteChosenFurniture = (id) => {
+    this.state.loading = true;
+    this.render();
+    API.deleteFurniture(() =>
+      API.getFurniture( //pirmas parametras
+        (furniture) => {
+          this.state.furniture = furniture;
+          this.state.loading = false;
+          this.render();
+        },
+        (err) => console.error(err) //antras parametras
+      ),
+      (err) => console.error(err)
+      , id //perduodu id i deletefurniture funkcija esancia api
+    );
+  }
+
   initialize = () => {
     this.fetchFurniture();
     this.htmlElement = document.createElement('div');
@@ -37,10 +54,11 @@ class FurnitureGridComponent {
       this.htmlElement.innerHTML = '';
       this.state.furniture.forEach(furniture => {
         const newCard = new FurnitureCardComponent({
-          data: furniture
-        })
+          data: furniture,
+          onDelete: this.deleteChosenFurniture,
+        });
         this.htmlElement.appendChild(newCard.htmlElement);
-      })
+      });
     }
   }
 }

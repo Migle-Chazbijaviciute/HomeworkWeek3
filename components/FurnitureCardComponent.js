@@ -10,6 +10,7 @@ class FurnitureCardComponent {
     element.innerHTML = `
   <div class="card mb-5" style="width: 300px" id="card-style">
     <div class="card-body">
+    <button class="btn btn-sm btn-danger delete">✕</button>
       <h4 class="card-title">${type} ${title}</h5>
       <h6 class="card-subtitle mb-2 text-muted">${price} $</h6>
       <h6 class="card-title">Kilmės šalis</h5>
@@ -23,13 +24,14 @@ class FurnitureCardComponent {
         <p class="list-group-item">El.paštas: ${owner.email}</p>
     </div>
   </div>  
-`
+`;
+    const deleteBtn = element.querySelector('.delete');
+    deleteBtn.addEventListener('click', () => this.props.onDelete(id));
     return element;
   };
 
   initialize = () => {
     this.htmlElement = document.createElement('div');
-
     this.render();
   };
 
