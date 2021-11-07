@@ -12,7 +12,7 @@ class FurnitureGridComponent {
     API.getFurniture(
       (furniture) => {
         this.state.furniture = furniture;
-        console.log(furniture);
+        console.log(this.state.furniture);
         this.render();
       },
       (err) => console.error(err)
@@ -26,7 +26,10 @@ class FurnitureGridComponent {
     this.render();
   }
 
+
   render = () => {
 
   }
+
+
 }
