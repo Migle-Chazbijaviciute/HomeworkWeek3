@@ -1,10 +1,12 @@
 const url = 'http://localhost:3000';
 
 const getFurniture = (resolve, reject) => {
-  fetch(url + '/furniture')
-    .then(response => response.json())//verciam i objekta
-    .then(resolve)
-    .catch(reject);
+  setTimeout(function () {
+    fetch(url + '/furniture')
+      .then(response => response.json())//verciam i objekta
+      .then(resolve)
+      .catch(reject);
+  }, 1000)
 }
 
 // fetch(url + '/furniture')
